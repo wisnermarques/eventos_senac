@@ -13,15 +13,15 @@
 <body>
   <!-- Isso é um comentário -->
   <header>
-    <h1>Evento Senac CEP Catalão</h1>
+    <h1>Eventos Senac CEP Catalão</h1>
     <nav>
       <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#programacao">Programação</a></li>
-        <li><a href="#inscricao">Inscrição</a></li>
+        <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+        <li><a href="#programacao"><i class="fas fa-calendar-alt"></i> Programação</a></li>
+        <li><a href="#inscricao"><i class="fas fa-address-book"></i> Inscrição</a></li>
       </ul>
     </nav>
-    <a href="https://www.go.senac.br" target="_blank">SENAC GO</a>
+    <!-- <a href="https://www.go.senac.br" target="_blank">SENAC GO</a> -->
   </header>
 
   <main>
@@ -64,17 +64,21 @@
     <section id="galeria">
       <h2>Galeria do Evento</h2>
       <div class="cards-container">
-        <div class="card">
+        <figure class="card">
           <img src="images/palestra1.jpeg" alt="Palestra Setembro Vermelho" class="card-img">
-          <h3 class="h3-img">Palestra Setembro Vermelho</h3>
-          <p>Descrição...</p>
-        </div>
+          <figcaption>
+            <h3 class="h3-img">Palestra Setembro Vermelho</h3>
+            <p>Descrição...</p>
+          </figcaption>
+        </figure>
 
-        <div class="card">
+        <figure class="card">
           <img src="images/palestra2.jpeg" alt="Palestra Setembro Amarelo" class="card-img">
-          <h3 class="h3-img">Palestra Setembro Amarelo</h3>
-          <p>Descrição...</p>
-        </div>
+          <figcaption>
+            <h3 class="h3-img">Palestra Setembro Amarelo</h3>
+            <p>Descrição...</p>
+          </figcaption>
+        </figure>
       </div>
 
       <h2>Vídeo do Evento Anterior</h2>
@@ -91,14 +95,14 @@
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>Descrição...</p>
+          <p>Descrição...</p>
         </div>
       </div>
     </section>
 
     <section id="inscricao">
       <h2>Inscreva-se no Evento</h2>
-      <form action="#" method="post">
+      <form action="#" method="post" class="formulario">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
 
@@ -116,7 +120,7 @@
       </form>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 Senac CEP Catalão</p>
   </footer>
 
