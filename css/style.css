@@ -201,7 +201,7 @@ img:hover {
 /* Badge (etiqueta sobre a imagem) */
 .badge {
   position: absolute;
-  top: 90px;
+  bottom: 20px;
   right: 15px;
   padding: 5px 10px;
   border-radius: 20px;
@@ -224,6 +224,27 @@ img:hover {
   color: #555;
 }
 
+/* ==========================
+   botão inscreva-se
+   ========================== */
+.btn-inscrever {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0077b6;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-inscrever:hover {
+  background: #023e8a;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 /* ==========================
    FORMULÁRIO
    ========================== */
