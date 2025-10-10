@@ -7,6 +7,7 @@ const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Seleciona elementos do DOM
 const selectAtividade = document.getElementById("atividade");
+console.log(selectAtividade);
 const form = document.getElementById("formInscricao"); 
 
 async function carregarAtividades() {
