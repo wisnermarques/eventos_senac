@@ -75,11 +75,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   function renderEvento(index) {
     const evento = eventos[index];
-    const dataFormatada = new Date(evento.data).toLocaleDateString("pt-BR", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-    });
+    // Converte manualmente sem aplicar fuso horário
+    const [ano, mes, dia] = evento.data.split("-").map(Number);
+    const dataFormatada = `${String(dia).padStart(2, "0")}/${String(mes).padStart(2, "0")}/${ano}`;
+    // const dataFormatada = new Date(evento.data).toLocaleDateString("pt-BR", {
+    //   day: "2-digit",
+    //   month: "2-digit",
+    //   year: "numeric",
+    // });
 
     carousel.innerHTML = `
       <div class="carousel-item fade-in">

@@ -2,21 +2,21 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Evento Senac CEP Catalão - Palestras, oficinas e networking.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eventos Senac</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programação</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-  <!-- Isso é um comentário -->
-  <header>
+  <header class="site-header">
     <h1>Eventos Senac CEP Catalão</h1>
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
         <li><a href="index.html"><img src="images/logosenac.png" alt="logosenac"></a></li>
         <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
         <li><a href="programacao.html" class="active"><i class="fas fa-calendar-alt"></i> Programação</a></li>
@@ -24,23 +24,24 @@
         <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
       </ul>
     </nav>
-    <!-- <a href="https://www.go.senac.br" target="_blank">SENAC GO</a> -->
   </header>
 
   <main>
-    <section id="programacao">
+    <section>
       <h2>Programação</h2>
       <div class="cards-container" id="cards-container">
+        <!-- Os cards virão dinamicamente do Supabase -->
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <p>&copy; 2025 Senac CEP Catalão</p>
   </footer>
 
+  <script src="js/menu.js"></script>
   <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
   <script src="js/programacao.js"></script>
-
 </body>
 
 </html>
