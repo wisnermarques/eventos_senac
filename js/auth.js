@@ -141,7 +141,7 @@ if (typeof window.authLoaded === 'undefined') {
             };
           } else {
             // Usuário deslogado
-            authBtn.textContent = "Entrar";
+            authBtn.textContent = "Admin";
             authBtn.setAttribute("aria-label", "Fazer login");
             authBtn.onclick = () => {
               window.location.href = "login.html";

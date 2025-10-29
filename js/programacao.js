@@ -22,6 +22,7 @@ async function carregarEventos() {
 
     const hoje = new Date();
 
+  
     container.innerHTML = data
       .map((evento) => {
         const tipoClasse = evento.tipo?.toLowerCase().replace(/\s+/g, "-") || "evento";

@@ -26,6 +26,11 @@
       <!-- botão de autenticação -->
       <div class="auth-area">
         <!-- inicialmente mostra Entrar; após login mostra nome + Sair -->
+        <p id="gestao" style="display:none;">
+          <a href="gestao.html">
+            <i class="fas fa-gears"></i> Gestão
+          </a>
+        </p>
         <button id="auth-btn" class="btn-auth">Admin</button>
       </div>
     </nav>
@@ -66,7 +71,7 @@
     <section id="galeria">
       <h2>Galeria do Evento</h2>
       <div class="cards-container">
-        <figure class="card"> <img src="images/palestra1.jpeg" alt="Palestra Setembro Vermelho" class="card-img">
+        <!-- <figure class="card"> <img src="images/palestra1.jpeg" alt="Palestra Setembro Vermelho" class="card-img">
           <figcaption>
             <h3 class="h3-img">Palestra Setembro Vermelho</h3>
             <p>Descrição...</p>
@@ -77,7 +82,7 @@
             <h3 class="h3-img">Palestra Setembro Amarelo</h3>
             <p>Descrição...</p>
           </figcaption>
-        </figure>
+        </figure> -->
       </div>
       <h2>Vídeo do Evento Anterior</h2>
       <div class="cards-container">
@@ -100,6 +105,7 @@
   <script src="js/menu.js"></script>
   <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
   <script src="js/carrossel.js"></script>
+  <script src="js/galeria.js"></script>
   <script src="js/supabase-config.js"></script>
   <script src="js/auth.js"></script>
 </body>
